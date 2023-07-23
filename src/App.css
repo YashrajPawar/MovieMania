@@ -1,0 +1,138 @@
+* {
+  color: aliceblue;
+  background-color: black;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-y: hidden;
+  box-shadow: -2px 7px 5px -6px rgba(255, 255, 255, 0.61);
+}
+
+.NavItems {
+  display: flex;
+}
+
+.NavItems > h1 {
+  margin: 0;
+  padding: 15px;
+  font-weight: normal;
+}
+
+.NavItems > h1 > a {
+  text-decoration: none;
+}
+
+.Title {
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.movieElements {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  scroll-snap-type: x mandatory;
+  position: relative;
+}
+
+.movieElement {
+  scroll-snap-align: start;
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.imageContainer {
+  margin: 10px;
+  margin-bottom: 1.5em;
+}
+
+.backdropImage {
+  width: 100%;
+  height: 50vh;
+  display: block;
+}
+
+.posterImage {
+  display: block;
+  margin: 10px;
+}
+
+.movieAndImage {
+  display: flex;
+  align-items: flex-start;
+}
+
+.movieInfo {
+  margin-left: 20px;
+}
+
+.movieInfoTitle {
+  margin-top: 2.5px;
+}
+
+.movieOverview {
+  font-weight: normal;
+}
+
+.newReleasesTitle {
+  margin-top: 150px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 150px;
+}
+
+.movieCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.moviePoster {
+  width: 100%;
+  height: auto;
+}
+
+.movieRating {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.movieTitle {
+  margin-top: -15px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+
+.movieCard:hover {
+  box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.FooterTitle {
+  margin: 30px;
+  text-align: center;
+  font-weight: normal;
+}
